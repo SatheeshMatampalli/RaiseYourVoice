@@ -1,0 +1,69 @@
+{% extends 'commonlayout.html' %}
+{% block body %}
+
+<br><br><br><br><br><br>
+<div class="row container-fluid">
+	<div class="col-md-6"><h2 class="text-blue">Suggestions</h2></div>
+	<div class="col-md-6"><br><br>
+		<button type="button" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus-circle"></span> Post Suggetions</button>		
+	</div>
+</div>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			
+				<!-- Left-aligned -->
+				<div class="media">
+				  <div class="media-left">
+				    <img src="static/images/suggestions.jpg" class="media-object img-circle" style="width:110px;height: 110px;">
+				  </div>
+				  <div class="media-body">
+				    <h3 class="media-heading"></h3>
+				    <h5><b>Date: </b></h5>
+				    <h5><b>Sector: </b></h5>
+				    <p><b>Suggestion: </b></p>	    
+				  </div>
+				</div><hr>
+					
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+		<div class="modal-content">
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Suggestion Please</h4>
+		    </div>
+		    <div class="modal-body">
+			    <form method="post" action="#">
+					
+					<div class="row">
+					    <div class="col-md-8 col-md-offset-1">
+					        <div class="form-group">
+								<h4>Post your suggestion here :</h4><br>
+								<label>Name:</label>
+								<input type="text" name="name" class="form-control" placeholder="enter ur name"><br><br>
+								<label>Sector:</label>
+								<select name="sector" id="sector" class="form-control">
+									<option value="Muncipality">Muncipality</option>
+									<option value="Police station">Police Station</option>
+									<option value="Fire station">Fire station</option>
+									<option value="108">108</option>
+								</select><br><br>
+								<label>Suggestion:</label>
+								<textarea rows="5" cols="50" name="sugg" id="sugg" placeholder="type here" class="form-control"></textarea>
+								<br><br>
+								<input type="submit" class="btn btn-primary "  value="post">
+						    </div>
+						</div>
+					</div>
+			    </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<br><br><br><br>
+       
+{% endblock %}

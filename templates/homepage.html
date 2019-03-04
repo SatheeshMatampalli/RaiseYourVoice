@@ -1,0 +1,116 @@
+{% extends 'commonlayout.html' %}
+{% block body %}
+
+
+
+<br><br><br><br>
+<div class="">
+  <center>
+  <button class="btn btn-info btn-xs fa fa-play-circle-o animated bounceInLeft"  onclick="play();" style="margin-top:12px;z-index: 1;position:absolute;"></button>
+  <button class="btn btn-info btn-xs fa fa-pause-circle-o animated bounceInRight" onclick="pause()" style="margin-left:30px;margin-top:12px;z-index: 1;position:absolute;"></button>
+  </center>
+  <div align="center" class="embed-responsive embed-responsive-16by9">
+    <video id="videos" autoplay loop class="embed-responsive-item">
+        <source src="static/videos/smartCity.MKV" type="video/mp4">
+    </video>
+  </div>
+  <style type="text/css">
+    .bannerIdea{}
+  </style>
+  <script>
+  var videos = document.getElementById("videos");
+  function play(){videos.play();}
+  function pause(){videos.pause();}
+  </script>
+</div>
+
+
+<div class="container-fluid bg-grey-dark" style="height: auto vh">
+  <h1 class="text-gold text-center text-Lucida-Handwriting">SMART IDEAS</h1><hr style="width: 60%;">
+  <br>
+  <div class="container row">
+    <div class="col-md-4 ">
+      <!-- normal -->
+        <div class="col-md-offset-2 ih-item square effect4"><a href="#">
+          <div class="img"><img src="static/images/bulb.jpg" alt="img"></div>
+          <div class="mask1"></div>
+          <div class="mask2"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div></a>
+        </div>
+      <!-- end normal -->
+    </div>
+    <div class="col-md-4">
+      <!-- normal -->
+        <div class="col-md-offset-2 ih-item square effect4"><a href="#">
+          <div class="img"><img src="static/images/city.jpg" alt="img"></div>
+          <div class="mask1"></div>
+          <div class="mask2"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div></a>
+        </div>
+        <!-- end normal -->
+    </div>
+    <div class="col-md-4">
+      <!-- normal -->
+        <div class="col-md-offset-2 ih-item square effect4"><a href="#">
+          <div class="img"><img src="static/images/smartLab.jpg" alt="img"></div>
+          <div class="mask1"></div>
+          <div class="mask2"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div></a>
+        </div>
+        <!-- end normal -->
+    </div>
+  </div>
+  <br><br>
+  <div class="container row">
+    <div class="col-md-4 ">
+      <!-- normal -->
+        <div class="col-md-offset-2 ih-item square effect4"><a href="#">
+          <div class="img"><img src="static/images/smartI.png" alt="img"></div>
+          <div class="mask1"></div>
+          <div class="mask2"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div></a>
+        </div>
+      <!-- end normal -->
+    </div>
+    <div class="col-md-4">
+      <!-- normal -->
+        <div class="col-md-offset-2 ih-item square effect4"><a href="#">
+          <div class="img"><img src="static/images/sc-primary-logo.png" alt="img" style="height: 200px;"></div>
+          <div class="mask1"></div>
+          <div class="mask2"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div></a>
+        </div>
+        <!-- end normal -->
+    </div>
+    <div class="col-md-4">
+      <!-- normal -->
+        <div class="col-md-offset-2 ih-item square effect4"><a href="#">
+          <div class="img"><img src="static/images/smartLife.png" alt="img"></div>
+          <div class="mask1"></div>
+          <div class="mask2"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div></a>
+        </div>
+        <!-- end normal -->
+    </div>
+  </div>
+  <div><br><br><br></div>  
+</div>
+{% endblock %}
